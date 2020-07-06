@@ -9,7 +9,7 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
     //if(isset($_POST["username"] && isset($_POST["password"]))){
-    $sql = "select username,password from doctor where username='$username'";
+    $sql = "select username,password from doctor where username='$username', password = '$password'";
     
    //$h_dep0= "select health_department from doctor where username='$username'";
     //$_SESSION["department"]=$h_dep0;
